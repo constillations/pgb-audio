@@ -4,7 +4,6 @@
     <title>Audio Sample</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-	<script src="GAPlugin.js"></script>
     <script type="text/javascript" charset="utf-8">
 
 
@@ -51,6 +50,18 @@
 			}, 1000);
 		}
 	}
+	
+	 function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // onError Callback 
+        //
+        function onError(error) {
+            alert('code: '    + error.code    + '\n' + 
+                  'message: ' + error.message + '\n');
+        }
+
 
     </script>
   </head>
